@@ -1,5 +1,5 @@
-// Simple
-function fibonacci(number) {
+
+function fibonacciSimple(number) {
 
     var past_first = 0, past_second = 1, next = 1;
 
@@ -12,17 +12,13 @@ function fibonacci(number) {
 };
 
 document.write('Result Simple  = ');
-document.write(fibonacci(prompt('Enter number')));
+document.write((prompt('Enter number')));
 
 
 
 
 
-
-
-
-// LoopAndArray
-function fibonacci(number) {
+function fibonacciLoopAndArray(number) {
 
 	var sequence = [1, 1];
 
@@ -33,12 +29,12 @@ function fibonacci(number) {
 	return sequence[number-1];
 }
 document.write('Result LoopAndArray = ');
-document.write(fibonacci(prompt('Enter number')));
+document.write(fibonacciLoopAndArray(prompt('Enter number')));
 
 
 
 //recurtion
-function fibonacci(number) {
+function fibonacciRecurtion(number) {
 
 	if (number < 1)
 		return 0;
@@ -46,8 +42,8 @@ function fibonacci(number) {
 	if (number <= 2)
 		return 1;
 
-   return fibonacci(number - 1) + fibonacci(number - 2);
+   return fibonacciRecurtion(number - 1) + fibonacciRecurtion(number - 2);
 }
 
 document.write('Result recurtion = ');
-document.write(fibonacci(prompt('Enter number')));
+document.write(fibonacciRecurtion(prompt('Enter number')));
